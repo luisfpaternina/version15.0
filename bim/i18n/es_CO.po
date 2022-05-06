@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 15.0+e\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-05-06 19:08+0000\n"
-"PO-Revision-Date: 2022-05-06 19:08+0000\n"
+"POT-Creation-Date: 2022-05-06 21:10+0000\n"
+"PO-Revision-Date: 2022-05-06 21:10+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -57,6 +57,12 @@ msgid "BIM"
 msgstr ""
 
 #. module: bim
+#: model:ir.model.fields,field_description:bim.field_purchase_order__project_id
+#: model:ir.model.fields,field_description:bim.field_sale_order__project_id
+msgid "BIM Project"
+msgstr ""
+
+#. module: bim
 #: model:ir.model,name:bim.model_bim_categ
 msgid "BIM categ"
 msgstr "Etiquetas"
@@ -72,6 +78,11 @@ msgid "BIM udn"
 msgstr "Líneas de negocio"
 
 #. module: bim
+#: model:ir.model.fields,field_description:bim.field_bim_bim__categ_id
+msgid "Categ"
+msgstr "Etiquetas"
+
+#. module: bim
 #: model:ir.actions.act_window,name:bim.action_view_bim_categ
 #: model:ir.ui.menu,name:bim.menu_bim_categ
 msgid "Categories"
@@ -81,6 +92,12 @@ msgstr "Etiquetas"
 #: model:ir.model.fields,field_description:bim.field_bim_bim__partner_id
 msgid "Client"
 msgstr "Cliente"
+
+#. module: bim
+#: model:ir.model.fields,field_description:bim.field_bim_bim__color
+#: model:ir.model.fields,field_description:bim.field_bim_categ__color
+msgid "Color Index"
+msgstr "Color"
 
 #. module: bim
 #: model_terms:ir.actions.act_window,help:bim.action_view_bim
@@ -109,6 +126,11 @@ msgstr "Creado en"
 #: model:ir.model.fields,field_description:bim.field_bim_udn__display_name
 msgid "Display Name"
 msgstr "Nombre mostrado"
+
+#. module: bim
+#: model:ir.model.fields.selection,name:bim.selection__bim_bim__state__finish
+msgid "Finish"
+msgstr "Finalizada"
 
 #. module: bim
 #: model:ir.model.fields,field_description:bim.field_bim_bim__message_follower_ids
@@ -246,6 +268,11 @@ msgid "Name"
 msgstr "Nombre"
 
 #. module: bim
+#: model:ir.model.fields.selection,name:bim.selection__bim_bim__state__new
+msgid "New"
+msgstr "Nuevo"
+
+#. module: bim
 #: model_terms:ir.ui.view,arch_db:bim.view_bim_form
 msgid "Notes"
 msgstr "Notas"
@@ -291,6 +318,31 @@ msgid "Photo"
 msgstr "Foto"
 
 #. module: bim
+#: model:ir.model.fields,field_description:bim.field_bim_bim__photo1
+msgid "Photo 1"
+msgstr "Foto 1"
+
+#. module: bim
+#: model:ir.model.fields,field_description:bim.field_bim_bim__photo2
+msgid "Photo 2"
+msgstr "Foto 2"
+
+#. module: bim
+#: model:ir.model.fields,field_description:bim.field_bim_bim__photo3
+msgid "Photo 3"
+msgstr "Foto 3"
+
+#. module: bim
+#: model:ir.model.fields,field_description:bim.field_bim_bim__photo4
+msgid "Photo 4"
+msgstr "Foto 4"
+
+#. module: bim
+#: model:ir.model.fields.selection,name:bim.selection__bim_bim__state__process
+msgid "Process"
+msgstr "Progreso"
+
+#. module: bim
 #: model:ir.model.fields,field_description:bim.field_bim_bim__project_name
 msgid "Project name"
 msgstr "Nombre de la obra"
@@ -298,6 +350,16 @@ msgstr "Nombre de la obra"
 #. module: bim
 #: model_terms:ir.ui.view,arch_db:bim.view_bim_form
 msgid "Purchase"
+msgstr "Compras"
+
+#. module: bim
+#: model:ir.model,name:bim.model_purchase_order
+msgid "Purchase Order"
+msgstr "Pedido de compra"
+
+#. module: bim
+#: model:ir.model.fields,field_description:bim.field_bim_bim__purchase_ids
+msgid "Purchases"
 msgstr "Compras"
 
 #. module: bim
@@ -313,12 +375,29 @@ msgid "Sales"
 msgstr "Ventas"
 
 #. module: bim
+#: model:ir.model,name:bim.model_sale_order
+msgid "Sales Order"
+msgstr "Pedido de venta"
+
+#. module: bim
+#: model:ir.model.fields,help:bim.field_sale_order__project_id
+msgid "Select a non billable project on which tasks can be created."
+msgstr ""
+"Seleccione un proyecto no facturable en el que se puedan crear tareas."
+
+#. module: bim
 #: model:ir.ui.menu,name:bim.menu_bim_project_settings
 msgid "Settings"
 msgstr "Configuración"
 
 #. module: bim
+#: model:ir.model.fields,field_description:bim.field_bim_bim__state
+msgid "State"
+msgstr "Estado"
+
+#. module: bim
 #: model:ir.actions.act_window,name:bim.action_view_bim_udn
+#: model:ir.model.fields,field_description:bim.field_bim_bim__udn_id
 #: model:ir.ui.menu,name:bim.menu_bim_udn
 msgid "Udn"
 msgstr "Líneas de negocio"
