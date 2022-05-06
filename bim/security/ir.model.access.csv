@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+manager_model_bim_bim,user_model_bim_bim,model_bim_bim,bim.bim_manager_group,1,1,1,1
