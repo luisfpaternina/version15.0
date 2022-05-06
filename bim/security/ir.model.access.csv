@@ -4,3 +4,4 @@ manager_model_bim_categ,user_model_bim_categ,model_bim_categ,bim.bim_manager_gro
 manager_model_bim_udn,user_model_bim_udn,model_bim_udn,bim.bim_manager_group,1,1,1,1
 manager_model_bim_partner_type,user_model_bim_partner_type,model_bim_partner_type,bim.bim_manager_group,1,1,1,1
 manager_model_bim_departaments,user_model_bim_departaments,model_bim_departaments,bim.bim_manager_group,1,1,1,1
+manager_model_bim_documentation,user_model_bim_documentation,model_bim_documentation,bim.bim_manager_group,1,1,1,1
