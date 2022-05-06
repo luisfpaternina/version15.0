@@ -50,11 +50,12 @@ class BimDocumentation(models.Model):
     def _set_image(self):
         self._set_image_value(self.image)
 
+    def print_document_notes(self):
+        return self.env.ref('bim.id_document_notes_report').report_action(self)
+
     @api.model
     def create(self, vals):
+    # Heredar crear y agregar secuencia automatica
         if vals.get('name', "New") == "New":
             vals['name'] = self.env['ir.sequence'].next_by_code('bim.documentation') or "New"
         return super(BimDocumentation, self).create(vals)
-
-    def print_document_notes(self):
-        return self.env.ref('bim.id_document_notes_report').report_action(self)
