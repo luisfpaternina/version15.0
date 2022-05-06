@@ -10,5 +10,13 @@ class BimUdn(models.Model):
     _description = "BIM udn"
 
     name = fields.Char(
-        string='Name',
+        string="Name",
         tracking=True)
+    active = fields.Boolean(
+        string="Active",
+        tracking=True,
+        default=True)
+
+    @api.onchange('name')
+    def _upper_name(self):        
+        self.name = self.name.upper() if self.name else False
