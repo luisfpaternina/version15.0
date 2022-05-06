@@ -1,0 +1,4 @@
+id,name,active
+id_001,"Licitación",True
+id_002,"Mantenimiento",True
+id_003,"Proyecto",True
