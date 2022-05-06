@@ -95,4 +95,8 @@ class BimBim(models.Model):
     def compute_purchase_count(self):
         for record in self:
             record.purchase_count = self.env['purchase.order'].search_count([('project_id', '=', self.id)])
+
+    def compute_sale_count(self):
+        for record in self:
+            record.sale_count = self.env['sale.order'].search_count([('project_id', '=', self.id)])
    
