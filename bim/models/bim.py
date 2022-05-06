@@ -53,6 +53,12 @@ class BimBim(models.Model):
         string="Photo 3")
     photo4 = fields.Binary(
         string="Photo 4")
+    departament_id = fields.Many2one(
+        'bim.departaments',
+        string="Departament")
+    partner_type_id = fields.Many2one(
+        'bim.partner.type',
+        string="Client type")
 
 
     @api.model
