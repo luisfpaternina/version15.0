@@ -27,7 +27,8 @@ class BimBim(models.Model):
         'res.partner',
         string="Client")
     address = fields.Char(
-        string="Address")
+        string="Address",
+        related="partner_id.street")
     state = fields.Selection([
         ('new','New'),
         ('process','Process'),
