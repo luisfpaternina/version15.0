@@ -35,7 +35,7 @@ class BimBim(models.Model):
     udn_id = fields.Many2one(
         'bim.udn',
         string="Udn")
-    categ_id = fields.Many2one(
+    categ_id = fields.Many2many(
         'bim.categ',
         string="Categ")
 
