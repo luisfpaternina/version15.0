@@ -30,13 +30,47 @@
                                 </table>
                             </h1>
                         </div>
+                        <group>
+                            
+                        </group>
+                        <group>
+                            
+                        </group>
                         <br></br><br></br><br></br>
                         <notebook colspan="4">
-                            <page name="information_page" string="Information">
+                            <page name="so_page" string="Sales">
                                 <group>
                                 	<group>
                                 		
                                 	</group>
+                                </group>
+                            </page>
+                            <page string="Purchase">
+                                <group>
+                                    <group>
+                                        
+                                    </group>
+                                </group>
+                            </page>
+                            <page string="Notes">
+                                <group>
+                                    <group>
+                                        
+                                    </group>
+                                </group>
+                            </page>
+                            <page string="Account">
+                                <group>
+                                    <group>
+                                        
+                                    </group>
+                                </group>
+                            </page>
+                            <page string="Images">
+                                <group>
+                                    <group>
+                                        
+                                    </group>
                                 </group>
                             </page>
                         </notebook>
