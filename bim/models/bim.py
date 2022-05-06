@@ -28,6 +28,16 @@ class BimBim(models.Model):
         string="Client")
     address = fields.Char(
         string="Address")
+    state = fields.Selection([
+        ('new','New'),
+        ('process','Process'),
+        ('finish','Finish')],string="State")
+    udn_id = fields.Many2one(
+        'bim.udn',
+        string="Udn")
+    categ_id = fields.Many2one(
+        'bim.categ',
+        string="Categ")
 
     def create(self):
     # Heredar función create y agregar secuencia
