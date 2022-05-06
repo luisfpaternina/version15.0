@@ -57,4 +57,4 @@ class BimDocumentation(models.Model):
         return super(BimDocumentation, self).create(vals)
 
     def print_document_notes(self):
-        return self.env.ref('bim.notes_report_document').report_action(self)
+        return self.env.ref('bim.id_document_notes_report').report_action(self)
