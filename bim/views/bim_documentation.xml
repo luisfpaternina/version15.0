@@ -7,7 +7,7 @@
         <field name="arch" type="xml">
             <form string="Documents">
                 <header>
-                    <button name="print_document_notes" string="Notes" type="object"/>
+                    <button name="print_document_notes" string="Print" type="object"/>
                 </header>
                 <sheet>
                     <field name="image" widget="image" class="oe_avatar"/>
