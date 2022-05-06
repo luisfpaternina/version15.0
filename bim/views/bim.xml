@@ -39,10 +39,12 @@
                                 <field name="project_name" required="1"/>
                                 <field name="partner_id" required="1" options="{'no_create': True, 'no_create_edit':True}"/>
                                 <field name="address"/>
+                                <field name="partner_type_id" options='{"color_field":"color"}'/>
                             </group>
                             <group>
                                 <field name="udn_id" options="{'no_create': True, 'no_create_edit':True}"/>
                                 <field name="categ_id" widget="many2many_tags" options='{"color_field":"color"}'/>
+                                <field name="departament_id" options='{"color_field":"color"}'/>
                             </group>
                         </group>
                         <group>
