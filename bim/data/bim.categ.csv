@@ -1,3 +1,5 @@
 id,name,active
 id_001,"Parque",True
 id_002,"Edificio",True
+id_003,"Institución",True
+id_004,"Vías/Carreteras",True
