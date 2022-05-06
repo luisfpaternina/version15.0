@@ -113,6 +113,12 @@
             name="BIM project"
             parent="menu_bim"
             action="action_view_bim"/>
+
+        <menuitem 
+            id="menu_bim_project_settings"
+            name="Settings"
+            parent="menu_bim"
+            action="action_view_bim"/>
                    
     </data>
 </odoo>
