@@ -42,7 +42,8 @@ class BimBim(models.Model):
         string='Color Index')
     purchase_ids = fields.Many2many(
         'purchase.order',
-        string="Purchases")
+        string="Purchases",
+        compute="compute_purchase_ids")
 
 
     @api.model
