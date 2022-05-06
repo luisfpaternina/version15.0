@@ -49,7 +49,6 @@
         'views/bim.xml',
         'views/bim_categ.xml',
         'views/bim_udn.xml',
-        'views/sale_order.xml',
         'views/purchase_order.xml',
         'reports/report_license_plates.xml',
               
