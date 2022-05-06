@@ -39,12 +39,8 @@ class BimBim(models.Model):
         'bim.categ',
         string="Categ")
     color = fields.Integer(
-        string='Color Index',
-        default="_get_default_color")
+        string='Color Index')
 
-    def _get_default_color(self):
-    # Colores
-        return randint(1, 11)
 
     def create(self):
     # Heredar función create y agregar secuencia
