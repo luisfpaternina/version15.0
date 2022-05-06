@@ -50,6 +50,7 @@
         'views/bim_categ.xml',
         'views/bim_udn.xml',
         'views/purchase_order.xml',
+        'views/bim_departaments.xml',
         'reports/report_license_plates.xml',
               
     ],

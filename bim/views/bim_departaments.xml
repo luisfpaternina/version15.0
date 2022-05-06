@@ -2,9 +2,9 @@
 <odoo>
     <data>
 
-        <record id="view_bim_udn_tree" model="ir.ui.view">
-            <field name="name">bim.udn.tree</field>
-            <field name="model">bim.udn</field>
+        <record id="view_bim_departaments_tree" model="ir.ui.view">
+            <field name="name">bim.departaments.tree</field>
+            <field name="model">bim.departaments</field>
             <field name="priority" eval="8" />
             <field name="arch" type="xml">
                 <tree>
@@ -13,9 +13,9 @@
             </field>
         </record>
 
-        <record id="view_bim_udn_form" model="ir.ui.view">
-            <field name="name">bim.udn.form</field>
-            <field name="model">bim.udn</field>
+        <record id="view_bim_departaments_form" model="ir.ui.view">
+            <field name="name">bim.departaments.form</field>
+            <field name="model">bim.departaments</field>
             <field name="priority" eval="8" />
             <field name="arch" type="xml">
                 <form>
@@ -47,9 +47,9 @@
             </field>
         </record>
     
-        <record model="ir.actions.act_window" id="action_view_bim_udn">
-            <field name="name">Udn</field>
-            <field name="res_model">bim.udn</field>
+        <record model="ir.actions.act_window" id="action_view_bim_departaments">
+            <field name="name">Departaments</field>
+            <field name="res_model">bim.departaments</field>
             <field name="view_mode">tree,form</field>
             <field name="domain">[]</field>
             <field name="help" type="html">
@@ -59,10 +59,10 @@
         </record>
 
         <menuitem 
-            id="menu_bim_udn"
-            name="Udn"
+            id="menu_bim_departaments"
+            name="Departaments"
             parent="menu_bim_project_settings"
-            action="action_view_bim_udn"/>
+            action="action_view_bim_departaments"/>
                    
     </data>
 </odoo>
