@@ -49,7 +49,7 @@
     
         <record model="ir.actions.act_window" id="action_view_bim_partner_type">
             <field name="name">Partner type</field>
-            <field name="res_model">partner.type</field>
+            <field name="res_model">bim.partner.type</field>
             <field name="view_mode">tree,form</field>
             <field name="domain">[]</field>
             <field name="help" type="html">
