@@ -40,6 +40,9 @@ class BimBim(models.Model):
         string="Categ")
     color = fields.Integer(
         string='Color Index')
+    purchase_ids = fields.Many2many(
+        'purchase.order',
+        string="Purchases")
 
 
     @api.model
