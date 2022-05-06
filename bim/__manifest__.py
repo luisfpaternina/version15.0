@@ -54,6 +54,7 @@
         'views/purchase_order.xml',
         'views/bim_departaments.xml',
         'views/bim_partner_type.xml',
+        'views/bim_documentation',
         'reports/report_license_plates.xml',
               
     ],
