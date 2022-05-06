@@ -21,11 +21,17 @@ class BimBim(models.Model):
     attachment = fields.Binary(
         string="Attachment",
         tracking=True)
+    project_name = fields.Char(
+        string="Project name")
+    partner_id = fields.Many2one(
+        'res.partner',
+        string="Client")
+    address = fields.Char(
+        string="Address")
 
-    @api.model
-    def create(self, vals):
+    def create(self):
     # Heredar función create y agregar secuencia
-        if vals.get('name', 'New') == 'New':
-            vals['name'] = self.env['ir.sequence'].next_by_code('bim')
-        result = super(BimBim, self).create(vals)
+        if self.name == 'New':
+            self.name = self.env['ir.sequence'].next_by_code('bim')
+        result = super(BimBim, self).create()
    
