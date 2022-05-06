@@ -68,6 +68,9 @@ class BimBim(models.Model):
         string="Active",
         tracking=True,
         default=True)
+    analytic_account_id = fields.Many2one(
+        'account.analytic.account',
+        string="Analytic account")
 
 
     @api.model
