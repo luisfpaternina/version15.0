@@ -42,9 +42,10 @@ class BimBim(models.Model):
         string='Color Index')
 
 
-    def create(self):
-    # Heredar función create y agregar secuencia
-        if self.name == 'New':
-            self.name = self.env['ir.sequence'].next_by_code('bim')
-        result = super(BimBim, self).create()
+    @api.model
+    def create(self, vals):
+        if vals.get('name', 'New') == 'New':
+            vals['name'] = self.env['ir.sequence'].next_by_code('bim') or 'New'
+        result = super(BimBim, self).create(vals)
+        return result
    
