@@ -115,7 +115,7 @@ msgstr "Departamento"
 #. module: bim
 #: model:ir.ui.menu,name:bim.menu_bim_project
 msgid "BIM project"
-msgstr "Proyecto"
+msgstr "Obras"
 
 #. module: bim
 #: model:ir.model,name:bim.model_bim_udn
