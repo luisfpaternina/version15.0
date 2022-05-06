@@ -81,7 +81,7 @@ class BimBim(models.Model):
             else:
                 record.purchase_ids = False
 
-     def get_purchases(self):
+    def get_purchases(self):
         self.ensure_one()
         return {
             'type': 'ir.actions.act_window',
