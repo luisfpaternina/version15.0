@@ -51,4 +51,12 @@ class BimBim(models.Model):
             vals['name'] = self.env['ir.sequence'].next_by_code('bim') or 'New'
         result = super(BimBim, self).create(vals)
         return result
+
+    def compute_purchase_ids(self):
+        for record in self:
+            purchases = self.env['purchase.order'].search([('project_id','=',self.id)])
+            if purchases:
+                record.purchase_ids = purchases.ids
+            else:
+                record.purchase_ids = False
    

@@ -59,9 +59,13 @@
                             </page>
                             <page string="Purchase">
                                 <group>
-                                    <group>
-                                        
-                                    </group>
+                                    <field name="purchase_ids">
+                                        <tree>
+                                            <field name="name"/>
+                                            <field name="partner_id"/>
+                                            <field name="state"/>
+                                        </tree>
+                                    </field>
                                 </group>
                             </page>
                             <page string="Account">
