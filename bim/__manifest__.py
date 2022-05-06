@@ -32,6 +32,10 @@
         'account_accountant',
         'project',
         'sale_subscription',
+        'purchase',
+        'hr',
+        'contacts',
+        'crm',
 
     ],
 
