@@ -44,6 +44,14 @@ class BimBim(models.Model):
         'purchase.order',
         string="Purchases",
         compute="compute_purchase_ids")
+    photo1 = fields.Binary(
+        string="Photo 1")
+    photo2 = fields.Binary(
+        string="Photo 2")
+    photo3 = fields.Binary(
+        string="Photo 3")
+    photo4 = fields.Binary(
+        string="Photo 4")
 
 
     @api.model
