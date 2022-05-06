@@ -39,7 +39,8 @@ class BimBim(models.Model):
         'bim.categ',
         string="Categ")
     color = fields.Integer(
-        string='Color Index')
+        string='Color Index',
+        default="_get_default_color")
 
     def _get_default_color(self):
     # Colores
