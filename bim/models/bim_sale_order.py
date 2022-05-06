@@ -7,3 +7,7 @@ import logging
 
 class SaleOrder(models.Model):
     _inherit = 'sale.order'
+
+    project_id = fields.Many2one(
+        'bim.bim',
+        string="BIM Project")
