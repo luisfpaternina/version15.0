@@ -59,6 +59,8 @@ class BimBim(models.Model):
     partner_type_id = fields.Many2one(
         'bim.partner.type',
         string="Client type")
+    notes = fields.Text(
+        string="Notes")
 
 
     @api.model
