@@ -78,7 +78,16 @@
                             <page string="Images">
                                 <group>
                                     <group>
-                                        
+                                        <field name="photo1" widget="image"/>
+                                    </group>
+                                    <group>
+                                        <field name="photo2" widget="image"/>
+                                    </group>
+                                    <group>
+                                        <field name="photo3" widget="image"/>
+                                    </group>
+                                    <group>
+                                        <field name="photo4" widget="image"/>
                                     </group>
                                 </group>
                             </page>
