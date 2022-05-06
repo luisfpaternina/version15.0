@@ -64,6 +64,10 @@ class BimBim(models.Model):
     purchase_count = fields.Integer(
         compute="compute_purchase_count")
     sale_count = fields.Integer()
+    active = fields.Boolean(
+        string="Active",
+        tracking=True,
+        default=True)
 
 
     @api.model
