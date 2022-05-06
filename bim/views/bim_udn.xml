@@ -7,7 +7,7 @@
             <field name="model">bim.udn</field>
             <field name="priority" eval="8" />
             <field name="arch" type="xml">
-                <tree string="bim">
+                <tree>
                     <field name="name"/>
                 </tree>
             </field>
@@ -18,9 +18,8 @@
             <field name="model">bim.udn</field>
             <field name="priority" eval="8" />
             <field name="arch" type="xml">
-                <form string="school">
+                <form>
                     <sheet>
-                        <field name="photo" widget="image" class="oe_left oe_avatar"/>
                         <div class="oe_title">
                             <h1>
                                 <table>
@@ -37,9 +36,6 @@
                             <group>
                                 
                             </group>
-                        </group>
-                        <group>
-                            
                         </group>
                         <br></br>
                     </sheet>
@@ -61,7 +57,6 @@
                 </p>
             </field>
         </record>
-
 
         <menuitem 
             id="menu_bim_udn"
