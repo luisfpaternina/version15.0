@@ -16,6 +16,8 @@ class BimCateg(models.Model):
         string="Active",
         tracking=True,
         default=True)
+    color = fields.Integer(
+        string='Color Index')
 
     @api.onchange('name')
     def _upper_name(self):        
