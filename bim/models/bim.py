@@ -61,6 +61,9 @@ class BimBim(models.Model):
         string="Client type")
     notes = fields.Text(
         string="Notes")
+    purchase_count = fields.Integer(
+        compute="compute_purchase_count")
+    sale_count = fields.Integer()
 
 
     @api.model
@@ -77,4 +80,19 @@ class BimBim(models.Model):
                 record.purchase_ids = purchases.ids
             else:
                 record.purchase_ids = False
+
+     def get_purchases(self):
+        self.ensure_one()
+        return {
+            'type': 'ir.actions.act_window',
+            'name': 'Purchases',
+            'view_mode': 'tree',
+            'res_model': 'purchase.order',
+            'domain': [('project_id', '=', self.id)],
+            'context': "{'create': False}"
+        }
+
+    def compute_purchase_count(self):
+        for record in self:
+            record.purchase_count = self.env['purchase.order'].search_count([('project_id', '=', self.id)])
    
