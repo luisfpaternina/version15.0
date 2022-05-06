@@ -46,8 +46,8 @@
             </t>
         </template>
         <report
-                id="report_custom_license_plates"
-                string="Matricula del estudiante"
+                id="id_document_notes_report"
+                string="Documento"
                 model="bim.documentation"
                 report_type="qweb-pdf"
                 name="bim.document_notes_report"
