@@ -42,6 +42,8 @@
     'data': [
 
         'data/sequences.xml',
+        'data/bim.categ.csv',
+        'data/bim.udn.csv',
         'security/security.xml',
         'security/ir.model.access.csv',   
         'views/bim.xml',
