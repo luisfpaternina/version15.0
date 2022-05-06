@@ -55,7 +55,8 @@
         'views/bim_departaments.xml',
         'views/bim_partner_type.xml',
         'views/bim_documentation.xml',
-        'reports/report_license_plates.xml',
+        'reports/report_bim_project.xml',
+        'reports/document_notes_report.xml',
               
     ],
     

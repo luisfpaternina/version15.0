@@ -1,16 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <odoo>
     <data>
-        <report
-                id="report_custom_license_plates"
-                string="Matricula del estudiante"
-                model="license.plates"
-                report_type="qweb-pdf"
-                name="colegio.report_custom_license_plates"
-        />
-
-
-        <template id="report_custom_license_plates">
+        
+        <template id="document_notes_report">
             <t t-call="web.html_container">
                 <t t-foreach="docs" t-as="o">                    
                     <div class="header">
@@ -19,7 +11,7 @@
                         	 	<tr>
                         	 		<th></th>
                         	 		<th></th>
-                        	 		<th><p align="center" style="font-size:30px;">MATRICULA #</p></th>
+                        	 		<th><p align="center" style="font-size:30px;">#</p></th>
                         	 	</tr>
                         	 </thead>
                         	 <tbody>
@@ -53,5 +45,12 @@
                 </t>
             </t>
         </template>
+        <report
+                id="report_custom_license_plates"
+                string="Matricula del estudiante"
+                model="bim.documentation"
+                report_type="qweb-pdf"
+                name="bim.document_notes_report"
+        />
   </data>
 </odoo>
