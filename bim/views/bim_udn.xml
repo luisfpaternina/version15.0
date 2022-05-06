@@ -2,9 +2,9 @@
 <odoo>
     <data>
 
-        <record id="view_bim_tree" model="ir.ui.view">
-            <field name="name">bim.tree</field>
-            <field name="model">bim.bim</field>
+        <record id="view_bim_udn_tree" model="ir.ui.view">
+            <field name="name">bim.udn.tree</field>
+            <field name="model">bim.udn</field>
             <field name="priority" eval="8" />
             <field name="arch" type="xml">
                 <tree string="bim">
@@ -13,9 +13,9 @@
             </field>
         </record>
 
-        <record id="view_bim_form" model="ir.ui.view">
-            <field name="name">bim.form</field>
-            <field name="model">bim.bim</field>
+        <record id="view_bim_udn_form" model="ir.ui.view">
+            <field name="name">bim.udn.form</field>
+            <field name="model">bim.udn</field>
             <field name="priority" eval="8" />
             <field name="arch" type="xml">
                 <form string="school">
@@ -32,9 +32,7 @@
                         </div>
                         <group>
                             <group>
-                                <field name="project_name" required="1"/>
-                                <field name="address"/>
-                                <field name="partner_id" required="1" options="{'no_create': True, 'no_create_edit':True}"/>
+                                <field name="active"/>
                             </group>
                             <group>
                                 
@@ -43,44 +41,7 @@
                         <group>
                             
                         </group>
-                        <br></br><br></br>
-                        <notebook colspan="4">
-                            <page name="so_page" string="Sales">
-                                <group>
-                                	<group>
-                                		
-                                	</group>
-                                </group>
-                            </page>
-                            <page string="Purchase">
-                                <group>
-                                    <group>
-                                        
-                                    </group>
-                                </group>
-                            </page>
-                            <page string="Account">
-                                <group>
-                                    <group>
-                                        
-                                    </group>
-                                </group>
-                            </page>
-                            <page string="Images">
-                                <group>
-                                    <group>
-                                        
-                                    </group>
-                                </group>
-                            </page>
-                            <page string="Notes">
-                                <group>
-                                    <group>
-                                        
-                                    </group>
-                                </group>
-                            </page>
-                        </notebook>
+                        <br></br>
                     </sheet>
                     <div class="oe_chatter">
                         <field name="message_follower_ids" widget="mail_followers"/>
@@ -90,9 +51,9 @@
             </field>
         </record>
     
-        <record model="ir.actions.act_window" id="action_view_bim">
-            <field name="name">BIM</field>
-            <field name="res_model">bim.bim</field>
+        <record model="ir.actions.act_window" id="action_view_bim_udn">
+            <field name="name">Udn</field>
+            <field name="res_model">bim.udn</field>
             <field name="view_mode">tree,form</field>
             <field name="domain">[]</field>
             <field name="help" type="html">
@@ -101,24 +62,12 @@
             </field>
         </record>
 
-        <menuitem 
-            id="menu_bim"
-            name="BIM"
-            groups="bim.bim_manager_group"
-            web_icon="bim,static/description/icon.png"
-            sequence="36"/>
 
         <menuitem 
-            id="menu_bim_project"
-            name="BIM project"
-            parent="menu_bim"
-            action="action_view_bim"/>
-
-        <menuitem 
-            id="menu_bim_project_settings"
-            name="Settings"
-            parent="menu_bim"
-            action="action_view_bim"/>
+            id="menu_bim_udn"
+            name="Udn"
+            parent="menu_bim_project_settings"
+            action="action_view_bim_udn"/>
                    
     </data>
 </odoo>
