@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>     
+<odoo>
+    <data>
+
+        <record id="view_bim_tree" model="ir.ui.view">
+            <field name="name">bim.tree</field>
+            <field name="model">bim.bim</field>
+            <field name="priority" eval="8" />
+            <field name="arch" type="xml">
+                <tree string="bim">
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="view_bim_form" model="ir.ui.view">
+            <field name="name">bim.form</field>
+            <field name="model">bim.bim</field>
+            <field name="priority" eval="8" />
+            <field name="arch" type="xml">
+                <form string="school">
+                    <sheet>
+                        <field name="photo" widget="image" class="oe_left oe_avatar"/>
+                        <div class="oe_title">
+                            <h1>
+                                <table>
+                                    <tr>
+                                        <td style="padding-right:10px;"><field name="name" required="1" placeholder="Name" /></td>
+                                    </tr>
+                                </table>
+                            </h1>
+                        </div>
+                        <group>
+                            <group>
+                                <field name="project_name" required="1"/>
+                                <field name="address"/>
+                                <field name="partner_id" required="1" options="{'no_create': True, 'no_create_edit':True}"/>
+                            </group>
+                            <group>
+                                
+                            </group>
+                        </group>
+                        <group>
+                            
+                        </group>
+                        <br></br><br></br>
+                        <notebook colspan="4">
+                            <page name="so_page" string="Sales">
+                                <group>
+                                	<group>
+                                		
+                                	</group>
+                                </group>
+                            </page>
+                            <page string="Purchase">
+                                <group>
+                                    <group>
+                                        
+                                    </group>
+                                </group>
+                            </page>
+                            <page string="Account">
+                                <group>
+                                    <group>
+                                        
+                                    </group>
+                                </group>
+                            </page>
+                            <page string="Images">
+                                <group>
+                                    <group>
+                                        
+                                    </group>
+                                </group>
+                            </page>
+                            <page string="Notes">
+                                <group>
+                                    <group>
+                                        
+                                    </group>
+                                </group>
+                            </page>
+                        </notebook>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers"/>
+                        <field name="message_ids" widget="mail_thread"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+    
+        <record model="ir.actions.act_window" id="action_view_bim">
+            <field name="name">BIM</field>
+            <field name="res_model">bim.bim</field>
+            <field name="view_mode">tree,form</field>
+            <field name="domain">[]</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">Create new record
+                </p>
+            </field>
+        </record>
+
+        <menuitem 
+            id="menu_bim"
+            name="BIM"
+            groups="bim.bim_manager_group"
+            web_icon="bim,static/description/icon.png"
+            sequence="36"/>
+
+        <menuitem 
+            id="menu_bim_project"
+            name="BIM project"
+            parent="menu_bim"
+            action="action_view_bim"/>
+
+        <menuitem 
+            id="menu_bim_project_settings"
+            name="Settings"
+            parent="menu_bim"
+            action="action_view_bim"/>
+                   
+    </data>
+</odoo>

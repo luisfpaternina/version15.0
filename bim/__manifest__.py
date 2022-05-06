@@ -45,7 +45,8 @@
         'security/security.xml',
         'security/ir.model.access.csv',   
         'views/bim.xml',
-        #'reports/report_license_plates.xml',
+        'views/bim_categ.xml',
+        'reports/report_license_plates.xml',
               
     ],
     
