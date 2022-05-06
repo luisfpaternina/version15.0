@@ -31,9 +31,14 @@
                             </h1>
                         </div>
                         <group>
-                            <field name="project_name" required="1"/>
-                            <field name="address"/>
-                            <field name="partner_id" required="1" options="{'no_create': True, 'no_create_edit':True}" />
+                            <group>
+                                <field name="project_name" required="1"/>
+                                <field name="address"/>
+                                <field name="partner_id" required="1" options="{'no_create': True, 'no_create_edit':True}" />
+                            </group>
+                            <group>
+                                
+                            </group>
                         </group>
                         <group>
                             
