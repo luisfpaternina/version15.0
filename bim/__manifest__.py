@@ -44,6 +44,8 @@
         'data/sequences.xml',
         'data/bim.categ.csv',
         'data/bim.udn.csv',
+        'data/bim.departaments.csv',
+        'data/bim.partner.type.csv',
         'security/security.xml',
         'security/ir.model.access.csv',   
         'views/bim.xml',
