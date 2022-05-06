@@ -54,13 +54,13 @@ msgstr ""
 #: model:ir.actions.act_window,name:bim.action_view_bim
 #: model:ir.model,name:bim.model_bim_bim model:ir.ui.menu,name:bim.menu_bim
 msgid "BIM"
-msgstr ""
+msgstr "Obras"
 
 #. module: bim
 #: model:ir.model.fields,field_description:bim.field_purchase_order__project_id
 #: model:ir.model.fields,field_description:bim.field_sale_order__project_id
 msgid "BIM Project"
-msgstr ""
+msgstr "Obra"
 
 #. module: bim
 #: model:ir.model,name:bim.model_bim_categ
@@ -70,7 +70,7 @@ msgstr "Etiquetas"
 #. module: bim
 #: model:ir.ui.menu,name:bim.menu_bim_project
 msgid "BIM project"
-msgstr "Proyecto"
+msgstr "Proyecto/Obras"
 
 #. module: bim
 #: model:ir.model,name:bim.model_bim_udn
