@@ -27,8 +27,20 @@
                             <field name="user_id" readonly="1"/>
                             <field name="company_id" groups="base.group_multi_company"/>
                         </group>
+                        <group>
+                            
+                        </group>
+                        <group>
+                            
+                        </group>
                     </group>
-                    <field name="observations" widget="html"/>
+                    <notebook colspan="4">
+                            <page string="Observations">
+                                <group>
+                                    <field name="observations" placeholder="Observations...!"/>
+                                </group>
+                            </page>
+                    </notebook>
                 </sheet>
                 <div class="oe_chatter">
                     <field name="message_follower_ids" widget="mail_followers" groups="base.group_user"/>
