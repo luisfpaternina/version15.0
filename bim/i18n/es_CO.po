@@ -396,7 +396,7 @@ msgstr ""
 #: model:ir.actions.act_window,name:bim.action_view_bim_partner_type
 #: model:ir.ui.menu,name:bim.menu_bim_partner_type
 msgid "Partner type"
-msgstr ""
+msgstr "Tipo de cliente"
 
 #. module: bim
 #: model:ir.model.fields,field_description:bim.field_bim_bim__photo
