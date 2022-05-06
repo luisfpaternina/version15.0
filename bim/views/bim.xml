@@ -34,7 +34,7 @@
                             <group>
                                 <field name="project_name" required="1"/>
                                 <field name="address"/>
-                                <field name="partner_id" required="1" options="{'no_create': True, 'no_create_edit':True}" />
+                                <field name="partner_id" required="1" options="{'no_create': True, 'no_create_edit':True}"/>
                             </group>
                             <group>
                                 
@@ -43,7 +43,7 @@
                         <group>
                             
                         </group>
-                        <br></br><br></br><br></br>
+                        <br></br><br></br>
                         <notebook colspan="4">
                             <page name="so_page" string="Sales">
                                 <group>
@@ -59,13 +59,6 @@
                                     </group>
                                 </group>
                             </page>
-                            <page string="Notes">
-                                <group>
-                                    <group>
-                                        
-                                    </group>
-                                </group>
-                            </page>
                             <page string="Account">
                                 <group>
                                     <group>
@@ -74,6 +67,13 @@
                                 </group>
                             </page>
                             <page string="Images">
+                                <group>
+                                    <group>
+                                        
+                                    </group>
+                                </group>
+                            </page>
+                            <page string="Notes">
                                 <group>
                                     <group>
                                         
