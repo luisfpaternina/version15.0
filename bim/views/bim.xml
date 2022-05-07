@@ -34,7 +34,7 @@
                             <button class="oe_stat_button" type="object" name="get_employees" icon="fa-users">
                                 <field string="Employees" name="employee_count" widget="statinfo"/>
                             </button>
-                            <button class="oe_stat_button" type="object" name="get_documents" icon="fa-users">
+                            <button class="oe_stat_button" type="object" name="get_documents" icon="fa-folder-o">
                                 <field string="Documents" name="documents_count" widget="statinfo"/>
                             </button>
                         </div>
