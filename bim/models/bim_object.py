@@ -15,8 +15,7 @@ class BimObject(models.Model):
         'Description')
     project_id = fields.Many2one(
         'bim.project',
-        string='Project',
-        ondelete="cascade")
+        string='Project')
     user_id = fields.Many2one(
         'res.users',
         string='Responsable',
@@ -30,9 +29,6 @@ class BimObject(models.Model):
     image = fields.Binary(
         "Image")
 
-
-    def _set_image_medium(self):
-        self._set_image_value(self.image)
 
     @api.model
     def create(self, vals):
