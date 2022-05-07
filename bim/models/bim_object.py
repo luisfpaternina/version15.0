@@ -9,29 +9,9 @@ class BimObject(models.Model):
     _rec_name = 'description'
 
     name = fields.Char(
-        'Code',
-        default="New")
+        string='Name')
     description = fields.Char(
         'Description')
     project_id = fields.Many2one(
         'bim.project',
         string='Project')
-    user_id = fields.Many2one(
-        'res.users',
-        string='Responsable',
-        tracking=True,
-        default=lambda self: self.env.user)
-    company_id = fields.Many2one(
-        comodel_name="res.company",
-        string="Company",
-        default=lambda self: self.env.company,
-        required=True)
-    image = fields.Binary(
-        string="Image")
-
-
-    @api.model
-    def create(self, vals):
-        if vals.get('name', "New") == "New":
-            vals['name'] = self.env['ir.sequence'].next_by_code('bim.object') or "New"
-        return super(BimObject, self).create(vals)
