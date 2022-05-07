@@ -79,6 +79,9 @@ class BimBim(models.Model):
         string="Start date")
     end_date = fields.Date(
         string="End date")
+    warehouse_id = fields.Many2one(
+        'stock.warehouse',
+        string="Warehouse")
 
 
     @api.model
