@@ -9,9 +9,19 @@ import logging
 class SaleOrder(models.Model):
     _inherit = 'sale.order'
 
-    project_id = fields.Many2one('bim.project', 'Project', tracking=True)
-    budget_id = fields.Many2one('bim.budget', 'Budjet', ondelete="restrict")
-    concept_id = fields.Many2one('bim.concepts', 'Concept', ondelete="restrict")
+    project_id = fields.Many2one(
+        'bim.project',
+        string='Project',
+        tracking=True)
+    budget_id = fields.Many2one(
+        'bim.budget',
+        string='Budjet',
+        ondelete="restrict")
+    concept_id = fields.Many2one(
+        'bim.concepts',
+        string='Concept',
+        ondelete="restrict")
+
 
     def _prepare_invoice(self):
         values = super()._prepare_invoice()
