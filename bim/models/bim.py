@@ -73,7 +73,8 @@ class BimBim(models.Model):
         string="Analytic account")
     employee_count = fields.Integer(
         compute="compute_employee_count")
-    documents_count = fields.Integer(compute="compute_documents_count")
+    documents_count = fields.Integer(
+        compute="compute_documents_count")
 
 
     @api.model
