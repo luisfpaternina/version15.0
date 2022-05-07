@@ -71,6 +71,8 @@ class BimBim(models.Model):
     analytic_account_id = fields.Many2one(
         'account.analytic.account',
         string="Analytic account")
+    employee_count = fields.Integer()
+    documents_count = fields.Integer()
 
 
     @api.model
