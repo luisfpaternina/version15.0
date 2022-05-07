@@ -36,6 +36,7 @@
         'hr',
         'contacts',
         'crm',
+        'hr_attendance',
 
     ],
 
