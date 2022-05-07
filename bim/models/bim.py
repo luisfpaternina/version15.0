@@ -76,9 +76,9 @@ class BimBim(models.Model):
     documents_count = fields.Integer(
         compute="compute_documents_count")
     start_date = fields.Date(
-        string="Date start")
+        string="Start date")
     end_date = fields.Date(
-        string="Date start")
+        string="End date")
 
 
     @api.model
