@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 15.0+e\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-05-06 23:36+0000\n"
-"PO-Revision-Date: 2022-05-06 23:36+0000\n"
+"POT-Creation-Date: 2022-05-07 20:10+0000\n"
+"PO-Revision-Date: 2022-05-07 20:10+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -96,6 +96,7 @@ msgid "BIM"
 msgstr "Obras"
 
 #. module: bim
+#: model:ir.model.fields,field_description:bim.field_hr_employee__project_id
 #: model:ir.model.fields,field_description:bim.field_purchase_order__project_id
 #: model:ir.model.fields,field_description:bim.field_sale_order__project_id
 msgid "BIM Project"
@@ -115,7 +116,7 @@ msgstr "Departamento"
 #. module: bim
 #: model:ir.ui.menu,name:bim.menu_bim_project
 msgid "BIM project"
-msgstr "Obras"
+msgstr "Proyecto"
 
 #. module: bim
 #: model:ir.model,name:bim.model_bim_udn
@@ -194,6 +195,11 @@ msgid "Created on"
 msgstr "Creado en"
 
 #. module: bim
+#: model_terms:ir.ui.view,arch_db:bim.view_bim_form
+msgid "Dates"
+msgstr "Fechas"
+
+#. module: bim
 #: model:ir.model.fields,field_description:bim.field_bim_bim__departament_id
 msgid "Departament"
 msgstr "Departamento"
@@ -237,8 +243,34 @@ msgstr ""
 #. module: bim
 #: model:ir.actions.act_window,name:bim.view_action_bim_documentation
 #: model_terms:ir.ui.view,arch_db:bim.form_view_bim_documentation
+#: model_terms:ir.ui.view,arch_db:bim.view_bim_form
 msgid "Documents"
 msgstr "Documentos"
+
+#. module: bim
+#: model:ir.model.fields,field_description:bim.field_bim_bim__documents_count
+msgid "Documents Count"
+msgstr "Contador documentos"
+
+#. module: bim
+#: model:ir.model,name:bim.model_hr_employee
+msgid "Employee"
+msgstr "Empleado"
+
+#. module: bim
+#: model:ir.model.fields,field_description:bim.field_bim_bim__employee_count
+msgid "Employee Count"
+msgstr "Contador de empleados"
+
+#. module: bim
+#: model_terms:ir.ui.view,arch_db:bim.view_bim_form
+msgid "Employees"
+msgstr "Empleados"
+
+#. module: bim
+#: model:ir.model.fields,field_description:bim.field_bim_bim__end_date
+msgid "End date"
+msgstr "Fecha fin"
 
 #. module: bim
 #: model:ir.model.fields,field_description:bim.field_bim_documentation__file_01
@@ -514,7 +546,6 @@ msgstr ""
 #. module: bim
 #: model:ir.model.fields,field_description:bim.field_bim_bim__notes
 #: model:ir.model.fields,field_description:bim.field_bim_documentation__observations
-#: model_terms:ir.ui.view,arch_db:bim.form_view_bim_documentation
 #: model_terms:ir.ui.view,arch_db:bim.view_bim_form
 msgid "Notes"
 msgstr "Notas"
@@ -611,6 +642,11 @@ msgid "Photo 4"
 msgstr "Foto 4"
 
 #. module: bim
+#: model_terms:ir.ui.view,arch_db:bim.form_view_bim_documentation
+msgid "Print"
+msgstr "Imprimir"
+
+#. module: bim
 #: model:ir.model.fields.selection,name:bim.selection__bim_bim__state__process
 msgid "Process"
 msgstr "Progreso"
@@ -654,7 +690,7 @@ msgstr "Compras"
 #. module: bim
 #: model:ir.model.fields,field_description:bim.field_bim_documentation__user_id
 msgid "Responsable"
-msgstr "Responsable"
+msgstr ""
 
 #. module: bim
 #: model:ir.model.fields,field_description:bim.field_bim_documentation__activity_user_id
@@ -698,6 +734,11 @@ msgid "Settings"
 msgstr "Configuración"
 
 #. module: bim
+#: model:ir.model.fields,field_description:bim.field_bim_bim__start_date
+msgid "Start date"
+msgstr "Fecha inicio"
+
+#. module: bim
 #: model:ir.model.fields,field_description:bim.field_bim_bim__state
 msgid "State"
 msgstr "Estado"
@@ -710,6 +751,11 @@ msgid ""
 "Today: Activity date is today\n"
 "Planned: Future activities."
 msgstr ""
+
+#. module: bim
+#: model_terms:ir.ui.view,arch_db:bim.view_bim_form
+msgid "Stock"
+msgstr "Inventario"
 
 #. module: bim
 #: model:ir.model.fields,help:bim.field_bim_documentation__activity_exception_decoration
@@ -742,6 +788,11 @@ msgstr ""
 #: model:ir.model.fields,field_description:bim.field_bim_udn__message_unread_counter
 msgid "Unread Messages Counter"
 msgstr ""
+
+#. module: bim
+#: model:ir.model.fields,field_description:bim.field_bim_bim__warehouse_id
+msgid "Warehouse"
+msgstr "Almacén"
 
 #. module: bim
 #: model:ir.model.fields,field_description:bim.field_bim_bim__website_message_ids
