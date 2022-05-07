@@ -31,6 +31,7 @@ class BimObject(models.Model):
     image = fields.Binary(
         "Image")
 
+
     def _set_image_medium(self):
         self._set_image_value(self.image)
 
@@ -39,14 +40,3 @@ class BimObject(models.Model):
         if vals.get('name', "New") == "New":
             vals['name'] = self.env['ir.sequence'].next_by_code('bim.object') or "New"
         return super(BimObject, self).create(vals)
-
-    def name_get(self):
-        res = super(BimObject, self).name_get()
-        result = []
-        for element in res:
-            project_id = element[0]
-            cod = self.browse(project_id).name
-            desc = self.browse(project_id).desc
-            name = cod and '[%s] %s' % (cod, desc) or '%s' % desc
-            result.append((project_id, name))
-        return result
