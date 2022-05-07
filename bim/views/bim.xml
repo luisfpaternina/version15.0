@@ -116,7 +116,7 @@
                             <page string="Stock">
                                 <group>
                                     <group>
-                                        
+                                        <field name="warehouse_id" options="{'no_create': True, 'no_create_edit':True}"/>
                                     </group>
                                 </group>
                             </page>
