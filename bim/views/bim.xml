@@ -109,6 +109,13 @@
                                     </group>
                                 </group>
                             </page>
+                            <page string="Stock">
+                                <group>
+                                    <group>
+                                        
+                                    </group>
+                                </group>
+                            </page>
                             <page string="Notes">
                                 <group>
                                     <group>
