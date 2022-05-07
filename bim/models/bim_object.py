@@ -27,7 +27,7 @@ class BimObject(models.Model):
         default=lambda self: self.env.company,
         required=True)
     image = fields.Binary(
-        "Image")
+        string="Image")
 
 
     @api.model
