@@ -6,3 +6,4 @@ from . import bim_sale_order
 from . import bim_departaments
 from . import bim_partner_type
 from . import bim_documentation
+from . import bim_hr
