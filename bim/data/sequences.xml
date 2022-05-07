@@ -22,5 +22,15 @@
            <field name="number_increment">1</field>
         </record>
 
+        <record id="id_sequence_bim_project_object" model="ir.sequence">
+           <field name="name">Sequence BIM project objects</field>
+           <field name="code">bim.object</field>
+           <field name="active">TRUE</field>
+           <field name="prefix">OBJ-</field>
+           <field name="padding">6</field>
+           <field name="number_next">1</field>
+           <field name="number_increment">1</field>
+        </record>
+
     </data>
 </odoo> 
