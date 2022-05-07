@@ -75,7 +75,9 @@ class BimBim(models.Model):
         compute="compute_employee_count")
     documents_count = fields.Integer(
         compute="compute_documents_count")
-    date_start = fields.Date(
+    start_date = fields.Date(
+        string="Date start")
+    end_date = fields.Date(
         string="Date start")
 
 
