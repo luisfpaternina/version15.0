@@ -62,7 +62,7 @@
                                 <field name="categ_id" widget="many2many_tags" options='{"color_field":"color"}'/>
                                 <field name="departament_id" options='{"color_field":"color"}'/>
                             </group>
-                            <group>
+                            <group string="Dates">
                                 <field name="start_date"/>
                                 <field name="end_date"/>
                             </group>
