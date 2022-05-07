@@ -6,7 +6,6 @@ class BimObject(models.Model):
     _name = 'bim.object'
     _description = "BIM Object"
     _inherit = ['mail.thread', 'mail.activity.mixin', 'image.mixin']
-    _order = "id desc"
     _rec_name = 'description'
 
     name = fields.Char(
