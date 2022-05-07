@@ -121,9 +121,7 @@
                             </page>
                             <page string="Notes">
                                 <group>
-                                    <group>
-                                        
-                                    </group>
+                                    <field name="notes" placeholder="Notes"/>
                                 </group>
                             </page>
                         </notebook>
