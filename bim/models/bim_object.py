@@ -17,8 +17,7 @@ class BimObject(models.Model):
     project_id = fields.Many2one(
         'bim.project',
         string='Project',
-        ondelete="cascade",
-        domain="[('company_id','=',company_id)]")
+        ondelete="cascade")
     user_id = fields.Many2one(
         'res.users',
         string='Responsable',
