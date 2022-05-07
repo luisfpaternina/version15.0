@@ -8,3 +8,4 @@ from . import bim_partner_type
 from . import bim_documentation
 from . import bim_hr
 from . import bim_object
+from . import bim_hr_attendance

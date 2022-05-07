@@ -1,19 +1,42 @@
 from odoo import api, fields, models, _
 from datetime import timedelta
+
+
 class HrAttendance(models.Model):
     _inherit = 'hr.attendance'
 
-    project_id = fields.Many2one('bim.project', string='Project', domain="[('state_id.include_in_attendance','=',True)]")
-    budget_id = fields.Many2one('bim.budget', string='Budget', domain="[('project_id','=',project_id)]")
-    concept_id = fields.Many2one('bim.concepts', string='Concept', domain="[('budget_id','=',budget_id),('type','=','departure')]")
-
-    bim_extra_hour_id = fields.Many2one('bim.extra.hour', string='Extra Hour')
-    attendance_cost = fields.Float(string='Cost', compute='compute_attendance_cost', store=True)
-    currency_id = fields.Many2one('res.currency', string='Moneda', required=True,
-                                  default=lambda r: r.env.company.currency_id)
-    hour_cost = fields.Float(string='Cost', compute='compute_attendance_cost', store=True)
-    description = fields.Char()
-    from_wizard = fields.Boolean(default=False)
+    project_id = fields.Many2one(
+        'bim.bim',
+        string='Project',
+        domain="[('state_id.include_in_attendance','=',True)]")
+    budget_id = fields.Many2one(
+        'bim.budget',
+        string='Budget',
+        domain="[('project_id','=',project_id)]")
+    concept_id = fields.Many2one(
+        'bim.concepts',
+        string='Concept',
+        domain="[('budget_id','=',budget_id),('type','=','departure')]")
+    bim_extra_hour_id = fields.Many2one(
+        'bim.extra.hour',
+        string='Extra Hour')
+    attendance_cost = fields.Float(
+        string='Cost',
+        compute='compute_attendance_cost',
+        store=True)
+    currency_id = fields.Many2one(
+        'res.currency',
+        string='Moneda',
+        required=True,
+        default=lambda r: r.env.company.currency_id)
+    hour_cost = fields.Float(
+        string='Cost',
+        compute='compute_attendance_cost',
+        store=True)
+    description = fields.Char(
+        string="Description")
+    from_wizard = fields.Boolean(
+        default=False)
 
     @api.onchange('project_id')
     def onchange_project_id(self):
